@@ -1,3 +1,4 @@
+ feature/baseCSS
 * {
 
   box-sizing: border-box;
@@ -36,6 +37,9 @@
   width: 25%;
   background-color: #a29bfe;
 }
+
+
+ main
   
  
 
