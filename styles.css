@@ -1,3 +1,4 @@
+ feature/baseCSS
 * {
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
@@ -39,11 +40,16 @@
   background-color: #a29bfe;
 }
 
+ feature/CSS-edits
 /* Table */
 
 .game-table {
   padding: 70px 0 0 0;
 }
+
+
+ main
+ main
   
  td {
   width: 100px;
