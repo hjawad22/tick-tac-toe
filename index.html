@@ -12,31 +12,31 @@
      <main class="main-container">
         <div class="column1">
            <h1>🦄</h1>
-           <h2>0 Wins</h2>
+           <h2 class="unicorn wins">0 Wins</h2>
         </div>
         <div class="column2">
-           <h1>It's 💖's turn</h1>
+           <h1>It's <span id="playerTurn">💖</span>'s turn</h1>
            <table class="game-table">
             <tr>
-               <td class="horizontal-border"></td>
-               <td class="vertical-border horizontal-border"></td>
-               <td class="horizontal-border"></td>
+               <td class="box horizontal-border" id="0"></td>
+               <td class="box vertical-border horizontal-border" id="1"></td>
+               <td class="box horizontal-border" id="2"></td>
             </tr>
             <tr>
-               <td class="horizontal-border"></td>
-               <td class="vertical-border horizontal-border"></td>
-               <td class="horizontal-border"></td>
+               <td class="box horizontal-border" id="3"></td>
+               <td class="box vertical-border horizontal-border " id="4"></td>
+               <td class="box horizontal-border" id="5"></td>
             </tr>
             <tr>
-               <td></td>
-               <td class="vertical-border"></td>
-               <td></td>
+               <td class="box" id="6"></td>
+               <td class="box vertical-border" id="7"></td>
+               <td class="box" id="8"></td>
             </tr>
            </table>
         </div>
         <div class="column3">
             <h1>💖</h1>
-            <h2>0 Wins</h2>
+            <h2 class="heart-wins">0 Wins</h2>
         </div>
      </main>
      <script type="text/javascript" src="game.js"></script>
