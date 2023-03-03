@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+h1,h2 {
+  color: #3508d5;
+}
+
 /* Main Containers */
 
 .main-container {
@@ -49,6 +53,7 @@
 
   
  td {
+  text-align: center;
   width: 100px;
   height: 90px;
 }
