@@ -1,9 +1,8 @@
 class Player {
- constructor() {
-  this.id = "0"
-  this.token = "💖"
+ constructor(id, token) {
+  this.id = id
+  this.token = token
   this.wins = "0"
-  this.turn = false
     
 }
 

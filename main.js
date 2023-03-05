@@ -1,32 +1,40 @@
-
 // query Selectors
 var boxes = document.querySelectorAll(".box")
+console.log(boxes)
 var playerTurn = document.getElementById("playerTurn")
 
+// golobal variables
+var game = new Game()
 
-// variable
-var currentPlayer = "💖"
 
 
-// event listeners
+// // event listeners
 boxes.forEach(box => {
-    box.addEventListener("click", togglePlayer)
-});
+    box.addEventListener("click", () => {
+    onClick(box.dataset.index)
+    })
+})
 
-// functions
+ // functions
 
-function togglePlayer(event) {
-var boxArray = Array.from(boxes)
-var index = boxArray.indexOf(event.target)
-playerTurn.innerHTML = currentPlayer
+function onClick(i) {
+game.makeAMove(i)
+updateboard()
+game.nextTurn()
 
-if (currentPlayer === "💖") {
- currentPlayer = "🦄" 
-} else {
-    currentPlayer = "💖"
 }
- 
+
+function updateboard() {
+    for (let i = 0; i < game.board.length; i++) {
+     var boxes = document.querySelector(`.box[data-index='${i}']`)
+     boxes.innerText = game.board[i]
+  }
 }
+
+
+
+
+
 
 
 
