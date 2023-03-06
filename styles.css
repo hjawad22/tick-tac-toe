@@ -54,6 +54,7 @@ h1,h2 {
   
  td {
   text-align: center;
+  font-size: 50px;
   width: 100px;
   height: 90px;
 }
