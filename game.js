@@ -5,33 +5,33 @@ class Game {
    this.player2 = new Player("second", "🦄") 
    this.currentPlayer = this.player1.token
    this.winningPlayer = this.player1.wins
-}
+ }
   
-nextTurn() {
-if (this.currentPlayer === this.player1.token) {
+ nextTurn() {
+ if (this.currentPlayer === this.player1.token) {
     this.currentPlayer = this.player2.token
   } else {
     this.currentPlayer = this.player1.token
   }
-}
+ }
 
-makeAMove(i) {
+ makeAMove(i) {
  if (this.endGame() || this.gameDraw()) {
     this.resetGame()
     return 
   }
 
-  if (console.log(this.board[i])) {
+  if (this.board[i]) {
     return
   }
 
-this.board[i] = this.currentPlayer
-var winningCombo = this.checkForWin()
+ this.board[i] = this.currentPlayer
+ var winningCombo = this.checkForWin()
 
   if (!winningCombo) {
     this.nextTurn()
   } 
-}
+ }
 
  checkForWin() {
    var winningPositions = [
@@ -62,20 +62,18 @@ var winningCombo = this.checkForWin()
       return false
     }
 
-   }
+  }
 
  resetGame() {
    this.board = new Array(9).fill(null) 
    this.currentPlayer = this.player1.token     
   }
 
-  
-
- gameDraw() { 
+  gameDraw() { 
   if(!this.board.includes(null)) {
     return true
    }    
- }
+  }
 }
 
 
